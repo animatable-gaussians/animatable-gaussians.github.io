@@ -34,12 +34,12 @@
                     <i class="fa fa-file"></i> Paper</a> </p>
               </div>
               <div class="column">
-                <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
-                  <i class="fa fa-youtube"></i> Video</a> </p>
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://www.youtube.com/watch?v=kOmZxD0HxZI" role="button"  target="_blank">
+                  <i class="fa fa-youtube"></i> Video</a></p>
             </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button"  target="_blank">
-                    <i class="fa fa-github"></i> Code</a> </p>
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/lizhe00/AnimatableGaussians" role="button"  target="_blank">
+                    <i class="fa fa-github"></i> Code</a></p>
               </div>
             </div>
             
@@ -56,10 +56,10 @@
         <div class="col-12 text-center">
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
-          <h6 style="color:#8899a5"> We present <b>Animatable Gaussians</b>, a new avatar representation<br> that leverages powerful 2D CNNs and explicit 3D Gaussian splatting for high-fidelity human avatar modeling.</h6>
+          <!-- <h6 style="color:#8899a5"> We present <b>Animatable Gaussians</b>, a new avatar representation<br> that leverages powerful 2D CNNs and explicit 3D Gaussian splatting for high-fidelity human avatar modeling.</h6> -->
             <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                  <source src="assets/teaser.mp4" type="video/mp4">
-              </video>
+                  <source src="assets/motivation.mp4" type="video/mp4">
+            </video>
               <!-- <br><br> -->
           <p class="text-left"> Modeling animatable human avatars from RGB videos is a long-standing and challenging problem. Recent works usually adopt MLP-based neural radiance fields (NeRF) to represent 3D humans, but it remains difficult for pure MLPs to regress pose-dependent garment details. To this end, we introduce Animatable Gaussians, a new avatar representation that leverages powerful 2D CNNs and 3D Gaussian splatting to create high-fidelity avatars. To associate 3D Gaussians with the animatable avatar, we learn a parametric template from the input videos, and then parameterize the template on two front & back canonical Gaussian maps where each pixel represents a 3D Gaussian. The learned template is adaptive to the wearing garments for modeling looser clothes like dresses. Such template-guided 2D parameterization enables us to employ a powerful StyleGAN-based CNN to learn the pose-dependent Gaussian maps for modeling detailed dynamic appearances. Furthermore, we introduce a pose projection strategy for better generalization given novel poses. Overall, our method can create lifelike avatars with dynamic, realistic and generalized appearances. Experiments show that our method outperforms other state-of-the-art approaches. 
             </p>
@@ -77,7 +77,10 @@
             <hr style="margin-top:0px">
           <h6 style="color:#8899a5"> Avatars animated by motions from <a href="https://amass.is.tue.mpg.de/" target="_blank">AMASS</a></h6>
             <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
-                  <source src="assets/basketball.mp4" type="video/mp4">
+              <source src="assets/teaser.mp4" type="video/mp4">
+            </video>
+            <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
+              <source src="assets/basketball.mp4" type="video/mp4">
             </video>
             <video width="90%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="">
               <source src="assets/football.mp4" type="video/mp4">
@@ -99,7 +102,7 @@
   </section>
   <br>
 
-  <!-- <section>
+  <section>
     <div class="container">
       <div class="row">
           <div class="col-12 text-center">
@@ -114,7 +117,7 @@
       </div>
     </div>
   </section>
-  <br> -->
+  <br>
 
   <section>
     <div class="container">
@@ -122,8 +125,9 @@
         <div class="col-12 text-center">
             <h3>Demo Video</h3>
             <hr style="margin-top:0px">
+            If the video does not play, please clik <a href="assets/demo_video.mp4" target="_blank">here</a> to watch the demo video.
             <div class="embed-responsive embed-responsive-16by9">
-                <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                <iframe style="clip-path: inset(1px 1px)" width="100%" height="100%" src="https://www.youtube.com/embed/kOmZxD0HxZI?si=8oKMaUEBXd-LqokT" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
             </div>
         </div>
       </div>
